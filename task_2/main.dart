@@ -1,3 +1,4 @@
+import 'airplane.dart';
 import 'mobile.dart';
 import 'new_member.dart';
 
@@ -29,4 +30,16 @@ void main() {
   member2.setAge = 17;
 
   NewMember.totalMembers();
+
+  //! Test Airplane
+  print("\n=====Test Airplane=====");
+  Airplane airplane1 = Airplane(
+    flightRange: 15000,
+    model: "Boeing 777",
+    capacity: 300,
+    speed: 500,
+  );
+  airplane1.move();
+  airplane1.enableAutoPilot();
+  airplane1.stop();
 }

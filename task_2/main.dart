@@ -1,4 +1,5 @@
 import 'mobile.dart';
+import 'new_member.dart';
 
 void main() {
   //! Test Mobile
@@ -16,4 +17,16 @@ void main() {
 
   mobile1.displayInfo();
   mobile2.displayInfo();
+
+  //! Test NewMember
+  print("\n=====Test NewMember=====");
+  NewMember member1 = NewMember();
+  member1.setName = "Nady";
+  member1.setAge = 24;
+
+  NewMember member2 = NewMember();
+  member2.setName = "Gafar";
+  member2.setAge = 17;
+
+  NewMember.totalMembers();
 }
